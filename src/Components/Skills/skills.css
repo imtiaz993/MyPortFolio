@@ -1,0 +1,181 @@
+.skills{
+    width: 75%;
+    margin: 0px auto;
+    padding-top: 30px
+}
+.skills p,ul{
+  font-size: medium; 
+}
+.skills h1{
+    color:white;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0px 3px 4px red; 
+    background-color: rgba(0, 0, 0, 1);
+    text-align: center;
+    letter-spacing: 1rem;
+    word-spacing: 1rem;
+    cursor:default;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.skills .technicalskills:hover{
+    box-shadow: 0px 3px 4px crimson;   
+}
+
+.skillDesc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+.skillSet p,ul{
+       letter-spacing: 0rem;
+       word-spacing: 0.1rem;
+       line-height: 1.5rem;
+       text-align: justify;
+       cursor:default;
+}
+.skillSet ul{
+    line-height: 1.3rem;
+
+}
+  .skillDesc div{
+    width: 45%;
+    margin: 0px auto;
+    text-align: left;
+  }
+
+  .skillSet .skillSetFlex{
+      width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+  }
+  .skillSet ul{
+   padding:0px;
+   margin: 0px;
+   margin-left: 30px;
+  }
+  .skillSet li{
+      padding: 2px;
+  }
+
+.skills-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.skills-img div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+
+}
+.skills-img img{
+    width: 60px;
+
+}
+@media screen  and (max-width:800px) {
+    .skills{
+        width: 90%;
+        margin: 0px auto;
+    }
+    .skills .technicalskills{
+    padding: 10px;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.5rem;
+    font-size: large;
+    }
+    .skillDesc{
+        display: block;
+      }
+      .skillsLotie{
+          width: 320px;
+      }
+
+  .skillSet .skillSetFlex{
+   justify-content: space-evenly;
+}
+      .skillSet p,ul{
+        letter-spacing: 0rem;
+           word-spacing: 0rem;
+           line-height: 1.5rem;
+           text-align: justify;
+           font-size: 15px;
+    }
+    .skillSet ul{
+        line-height: 1.2rem;
+    }
+    
+      .skillSet ul{
+       padding:0px;
+       margin: 0px;
+       margin-top: 10px;
+       margin-left: 0px;
+      }
+      .skillSet li{
+          padding: 2px;
+      }
+      .skillDesc div{
+        width: 100%;
+      }
+      .skills-img div{
+        width: 50px;
+        height: 50px;
+        margin: 20px 15px;
+        background-color: rgba(17, 16, 16, 0.378);
+    }
+    .skillSet ul{
+        font-size:14px;
+        margin-left: 20px;
+       }
+       .skills-img{
+        margin-top: 20px;
+    }
+    .skills-img img{
+        width: 40px;
+    
+    }
+  
+}
+.skillsLotie div:hover{
+    animation: myAnim 1s ease 0s 1 normal forwards;
+  }
+
+.technicalskills:hover{
+    animation: myAnim 0.5s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  .skills-img div:hover{
+    animation: myAnim5 1s ease 0s 1 normal forwards;
+  }
+  @keyframes myAnim5{
+    0% {
+      transform: rotate(360deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }

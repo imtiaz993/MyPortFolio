@@ -1,0 +1,183 @@
+.contact{
+    width: 75%;
+    margin: 0px auto;
+    margin-bottom: 7px;
+    padding-bottom: 50px;
+    padding-top: 75px
+}
+.contactMe{
+    color:white;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0px 3px 4px red; 
+    background-color: rgba(0, 0, 0, 0.664); 
+    text-align: center;
+    letter-spacing: 1rem;
+    word-spacing: 1rem;
+    margin-bottom: 50px;
+    cursor:default;
+}
+.contactMe:hover{
+    box-shadow: 0px 3px 4px crimson;   
+}
+.contactFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+.contactInputs{
+    width: 50%;
+  
+}
+.contactInputs input,textarea{
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    padding: 8px;
+    margin: 7.5px 0px;
+    border: 1px solid transparent;
+}
+.contactInputs input:focus{
+    outline: 0px ;
+    border-bottom: 1px solid white;
+}
+.contactInputs textarea:focus{
+    outline: 0px ;
+    border-bottom: 1px solid white;
+}
+.contactInputs textarea{
+    resize: none;
+    height: 150px;
+}
+
+.buttonEnd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.contactInputs button{
+    border-radius: 25px;
+    margin:10px 0px;
+    padding: 6px 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    font-size: small;
+    font-weight:bold;
+}
+.contactInputs button:hover{
+    background-color: black;
+    color: white;
+}
+.contact a,p{
+    display: inline-block;
+    color:lavenderblush;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 0px;
+}
+.contact p{
+    font-size: 14px;
+}
+.contact i{
+    margin-right: 10px;
+
+}
+.contactLinks{
+    width: 45%;
+
+}
+
+.mylinks div{
+   
+    padding: .5px;
+}
+.mylinks a:hover{
+    color: black;
+    background-color: white;
+}
+.mylinks p:hover{
+    color: black;
+    background-color: white;
+}
+.contactLinks div{
+    margin: 5px 0px;
+}
+@media screen  and (max-width:800px) {
+    .contact{
+        width: 90%;
+        margin: 0px auto;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 40px;
+        padding-top: 100px
+        
+    }
+    .contactMe{
+    padding: 10px;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.5rem;
+  font-size: large;
+    }
+    .contactFlex{
+        display: block;
+    }
+    .contactLinks{
+        width: 100%;
+    }
+    .contact a,p{
+        font-size: small;
+    }
+    .contactLinks i{
+        margin: 0px;
+        margin-right: 5px;
+    }
+    .contactInputs input,textarea{
+        width: 95%;
+        margin:6.5px auto;
+        padding: 7px;
+    }
+    .contactInputs{
+        margin: 40px 0px;
+        width: 100%;
+        margin: 40px auto;
+    }
+    .contactInputs button{
+        padding: 6px 15px;
+    }
+    .mylinks a:hover{
+        color: white;
+        background-color: black;
+    }
+    .mylinks p:hover{
+        color: white;
+        background-color: black;
+    }
+}
+.contactMe:hover{
+    animation: myAnim 0.5s ease 0s 1 normal forwards;
+  }
+  @keyframes myAnim {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  .contactlotie div:hover{
+    animation: myAnim 1s ease 0s 1 normal forwards;
+  }
+  

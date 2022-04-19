@@ -1,0 +1,169 @@
+
+.work{
+    width: 75%;
+    margin: 0px auto;
+    padding-top: 75px;
+}
+
+.work .personalP{
+    color:white;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0px 3px 4px red; 
+    background-color: rgba(0, 0, 0, 0.664); 
+    text-align: center;
+    letter-spacing: 1rem;
+    word-spacing: 1rem;
+    cursor:default;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.work .personalP:hover{
+    box-shadow: 0px 3px 4px crimson;   
+}
+
+.workDesc{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  
+}
+.workDesc div{
+  width: 45%;
+  margin: 0px auto;
+  text-align: justify;
+}
+.workset p{
+  margin-top: 30px;
+  letter-spacing: 0rem;
+       word-spacing: 0.1rem;
+       line-height: 1.5rem;
+       cursor:default;
+       font-size: medium; 
+}
+.recent{
+  margin: 0px ;
+  padding: 0px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  letter-spacing: 0.5rem;
+  word-spacing: 0.5rem;
+  cursor:default;
+  font-size: x-large;
+  font-weight: 400;
+}
+.projectLinks{
+  width: 100%;
+ 
+
+}
+.work-img{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.work-img div{
+    margin: 25px 0px;
+    width: 450px;
+    height: 200px;
+    object-fit:contain;
+}
+
+.work-img img{
+width: 100%;
+height: 100%;
+}
+.work-img div:hover{
+    animation: myAnim1 1s ease 0s 1 normal forwards;
+}
+.work-img div{
+  animation: myAnim2 1s ease 0s 1 normal forwards;
+}
+
+
+@media screen  and (max-width:800px) {
+  .work{
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 0px;
+    padding-top: 100px
+  }
+  .work .personalP{
+  padding: 10px;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.3rem;
+  font-size: large;
+}
+  .workDesc{
+    display: block;
+  }
+  .workset p{
+    margin-top: 50px;
+    letter-spacing: 0rem;
+    word-spacing: 0rem;
+    line-height: 1.5rem;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .workDesc div{
+    width: 100%;
+  }
+.recent{
+  letter-spacing: 0.2rem;
+  word-spacing: 0.3rem;
+  font-size: larger;
+}
+  .work-img{
+    width: 90%;
+    margin: 0px auto;
+  }
+  .work-img div{
+    height: 175px;
+}
+}
+
+@keyframes myAnim1 {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    transform: scale(1);
+  }
+
+  100% {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    transform: scale(1.1);
+  }
+}
+@keyframes myAnim2 {
+ 0% {
+    box-shadow: 0 0 20 0 rgba(0, 0, 0, 0);
+    transform: scale(1.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.35);
+    transform: scale(1);
+  }
+}
+.personalP:hover{
+  animation: myAnim 0.5s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.worklotie div:hover{
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}

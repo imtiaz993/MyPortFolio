@@ -1,0 +1,174 @@
+.projectDiv{
+    display: block;
+    margin-top: 30px;
+    cursor:default;
+}
+.projectDiv .desc{
+    width: 100%;
+    cursor:default;
+}
+.projectt h4,h2,p{
+    margin: 0px ;
+    padding: 0px;
+    
+
+}
+.projectt h4{
+    cursor:default;
+    margin: 10px 0px 10px 0px;
+}
+
+.projectt .description{
+    line-height: 1.2rem;
+    word-spacing: 0.1rem;
+    margin: 10px 0px;
+}
+.description p::first-letter{
+margin-left: 85px;
+}
+.projectDiv h4{
+    font-size: larger;
+    font-weight: 500;
+}
+.projectDiv h2{
+    color: red;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+.projectDiv .tool_tech{
+    font-size: small;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.projectDiv span{
+    margin: 5px;
+    padding: 3px 8px;
+    border-radius: 25px;
+    background-color: dimgray;
+    color: black;
+    cursor:default;
+}
+.projectDiv .project_desc::first-letter{
+    margin-left: 40px;
+}
+.projectDiv .project_desc{
+    
+color: white;
+text-align: justify;
+font-size: medium;
+cursor:default;
+}
+.carousel{
+    border: 1px solid white;
+    width: 100%;
+    background-color: darkgray;
+    height: 500px;
+    margin-top: 20px;
+    object-fit: contain;
+    text-align: center;
+}
+.carousel div{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+object-fit: cover;
+    text-align: center;
+    
+}
+.carousel img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.projectDiv .desc div{
+    margin: 5px 0px;
+    
+}
+.visit{
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    font-size: large;
+    margin:10px;
+    font-weight: normal;
+}
+.visit i{
+    margin-left: 5px;
+}
+@media screen  and (max-width:1000px) {
+    .projectDiv{
+        display: block;
+        margin-top: 30px;
+    }   
+    .projectDiv .desc{
+        width: 100%;
+    }
+    .projectDiv h2{
+        font-size: larger;
+        margin-left: 20px;
+    }
+    .projectt h4{
+        margin: 10px 0px 0px 0px;
+    }
+    .projectDiv  h2,h4{
+        display: inline-block;
+
+    }
+    .projectDiv .tool_tech{
+        margin-left: 30px;
+        justify-content: flex-start;
+    }
+    .projectDiv span{
+        font-size: small;
+        margin: 5px;
+        padding: 2px 4px;
+        border-radius: 25px;
+        margin-top: 10px;
+
+    }
+    .projectDiv .project_desc{
+        color: white;
+        font-size: 15px;
+        text-align: justify;
+        width: 100%;
+        margin: 0px auto;
+        }
+        .carousel{
+            width: 100%;
+            background-color: darkgray;
+            margin: 20px 0px;
+        }
+        .projectDiv .desc div{
+            margin: 5px 0px;
+        }
+        .projectt .description{
+            width: 100%;
+            text-align: justify;
+            margin: 10px auto;
+            
+        }
+        .visit{
+            text-decoration: none;
+            letter-spacing: 0rem;
+            font-size: large;
+            margin:10px;
+            font-weight: normal;
+        }
+
+}
+@media screen  and (min-width:500px) and (max-width:1000px) {
+    .carousel{
+
+        height: 300px;
+        margin-top: 20px;
+    }
+}
+@media screen  and (max-width:500px) {
+    .carousel{
+        margin-top: 20px;
+        height: 175px;
+
+    }
+}

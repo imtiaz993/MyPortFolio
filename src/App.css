@@ -1,0 +1,145 @@
+.mycontainer{
+    color: white;
+   background-color: rgba(0, 0, 0);
+    padding-top: 50px;
+}
+
+.mycontainer .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: auto;
+    margin-bottom:auto;
+    font-weight: normal;
+    line-height: normal;
+    font-size: x-large;
+}
+
+
+
+.auth{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+}
+.typing{
+    width: 50%;
+}
+.auth .myimage{
+    
+    width: 45%;
+   
+
+
+    
+}
+.myimage img{
+    background-color: rgb(15,15, 15);
+    margin-top: 10px;
+    width: 100%;
+    height:95%;
+    border:2px solid white ;
+    border-radius: 15%;
+    object-fit: cover;
+
+
+}
+.authImg{
+    animation: myAnimpic 2s ease 0s 1 normal forwards;
+}
+@media screen  and (min-width:650px) and (max-width:799px) {
+    .mycontainer{
+        padding-top: 0px;
+    }
+    .typing{
+        width: 60%;
+    }
+    .auth .myimage{
+        width: 35%;
+        object-fit: contain;  
+    }
+    .myimage img{
+        background-color: rgb(15,15, 15);
+        margin-top: 40px;
+        width: 100%;
+        height:60%;
+        border:1px solid gray ;
+        border-radius: 15%;
+    }
+}
+@media screen  and  (min-width:1101px) {
+    .innerCont{
+        height: 100vh;
+    }
+}
+@media screen  and (min-width:800px) and (max-width:1100px) {
+    .mycontainer{
+        padding-top: 0px;
+    }
+    .typing{
+    width: 50%;
+}
+.auth .myimage{
+    width: 45%;
+    object-fit: contain;  
+}
+.myimage img{
+    background-color: rgb(15,15, 15);
+    margin-top: 40px;
+    width: 100%;
+    height:90%;
+    border:1px solid gray ;
+    border-radius: 15%;
+}
+}
+ 
+@media screen  and (max-width:649px) {
+    .mycontainer{
+
+        padding-top: 0px;
+    }
+    .innerCont{
+        height: 850px;
+    }
+    .auth{
+        display: block;
+        border-bottom:none;
+        
+    }
+    .authImg{
+        border-bottom: 2px solid white;
+    }
+    .typing{
+        width: 100%;
+    }
+    .auth .myimage{
+        width: 100%;
+        object-fit: contain;
+        box-shadow: none;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+
+      
+
+    }
+    .myimage img{
+        width: 100%;
+        height:100%;
+        margin-top: 0px;
+        border:none;
+        border-radius: 0;
+    }
+}
+@keyframes myAnimpic{
+    0% {
+      opacity: 0;
+      transform: rotateX(-100deg);
+      transform-origin: top;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+      transform-origin: top;
+    }
+  }
+  
